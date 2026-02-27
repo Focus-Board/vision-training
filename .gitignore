@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# zip files 
+*.zip
+
+# whiteboard images
+object-detection/whiteboards/train/
+object-detection/whiteboards/valid/
+object-detection/whiteboards/test/
+
+# Training outputs
+runs/
+*.pt
+*.onnx
+*.tflite
+
+# OS
+.DS_Store
+Thumbs.db

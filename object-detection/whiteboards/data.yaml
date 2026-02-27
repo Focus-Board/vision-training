@@ -1,0 +1,13 @@
+train: train/images
+val: valid/images
+test: test/images
+
+nc: 6
+names: ['biology', 'codingprojects', 'lksh', 'longwhiteboard', 'smartboard', 'tinkoff']
+
+roboflow:
+  workspace: paul-artushkov
+  project: whiteboards-detection
+  version: 15
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/paul-artushkov/whiteboards-detection/dataset/15
