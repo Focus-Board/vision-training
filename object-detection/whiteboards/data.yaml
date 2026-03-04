@@ -2,8 +2,8 @@ train: train/images
 val: valid/images
 test: test/images
 
-nc: 6
-names: ['biology', 'codingprojects', 'lksh', 'longwhiteboard', 'smartboard', 'tinkoff']
+nc: 1
+names: ['whiteboard']
 
 roboflow:
   workspace: paul-artushkov

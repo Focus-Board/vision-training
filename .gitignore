@@ -16,6 +16,11 @@ runs/
 *.onnx
 *.tflite
 
+# Export calibration data 
+calibration_image_sample_data_*.npy
+calibration_image_sample_data_*.npy.zip
+datasets/
+
 # OS
 .DS_Store
 Thumbs.db
