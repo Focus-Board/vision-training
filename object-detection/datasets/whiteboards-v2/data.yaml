@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 2
+names: ['Handwritten text', 'Whiteboard']
+
+roboflow:
+  workspace: university-of-peshawar-4qet5
+  project: new-dataset-xjgtk
+  version: 12
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/university-of-peshawar-4qet5/new-dataset-xjgtk/dataset/12
