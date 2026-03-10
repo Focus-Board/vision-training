@@ -3,11 +3,11 @@ datasetVersion: "v2"
 
 datasets:
   v1:
-    dataYaml: "object-detection/datasets/whiteboards-v1/data.yaml"
+    dataYaml: "datasets/whiteboards-v1/data.yaml"
     runName: "yolo26n-whiteboards-v1"
     cache: true  # Small dataset, fits in RAM
   v2:
-    dataYaml: "object-detection/datasets/whiteboards-v2/data.yaml"
+    dataYaml: "datasets/whiteboards-v2/data.yaml"
     runName: "yolo26n-whiteboards-v2"
     cache: "disk"  # Large dataset, use disk cache
 

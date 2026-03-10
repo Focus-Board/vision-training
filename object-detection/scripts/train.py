@@ -1,8 +1,9 @@
+# Run from object-detection/ directory
 from ultralytics import YOLO
 import torch
 import yaml
 
-with open("object-detection/config.yaml", "r") as f:
+with open("config.yaml", "r") as f:
     config = yaml.safe_load(f)
 
 version = config["datasetVersion"]
@@ -28,8 +29,7 @@ if __name__ == "__main__":
         amp = True,
         perspective = 0.0001,
         flipud = 0.0,
-        project = "object-detection/runs",
         name = dataset["runName"],
     )
 
-    print(f"\nTraining complete. Results have been saved to 'object-detection/runs/{dataset['runName']}'.")
+    print(f"\nTraining complete. Results saved to 'runs/{dataset['runName']}'.")

@@ -1,15 +1,15 @@
+# Run from object-detection/ directory
 from ultralytics import YOLO
 import yaml
 import cv2
 
-with open("object-detection/config.yaml", "r") as f:
+with open("config.yaml", "r") as f:
     config = yaml.safe_load(f)
 
 version = config["datasetVersion"]
 dataset = config["datasets"][version]
-runsDir = config["runsDir"]
 
-modelPath = f"{runsDir}/{dataset['runName']}/weights/best.pt"
+modelPath = f"runs/{dataset['runName']}/weights/best.pt"
 
 # Change this to your image path
 imagePath = "image.jpeg"

@@ -1,13 +1,14 @@
+# Run from object-detection/ directory
 from ultralytics import YOLO
 import yaml
 
-with open("object-detection/config.yaml", "r") as f:
+with open("config.yaml", "r") as f:
     config = yaml.safe_load(f)
 
 version = config["datasetVersion"]
 dataset = config["datasets"][version]
 
-modelPath = f"object-detection/runs/{dataset['runName']}/weights/best.pt"
+modelPath = f"runs/{dataset['runName']}/weights/best.pt"
 dataYaml = dataset["dataYaml"]
 
 if __name__ == "__main__":
